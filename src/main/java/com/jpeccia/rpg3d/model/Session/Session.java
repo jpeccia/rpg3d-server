@@ -12,6 +12,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -36,4 +37,8 @@ public class Session {
         inverseJoinColumns = @JoinColumn(name = "user_id")
     )
     private Set<User> users;
+
+    @ManyToOne
+    @JoinColumn(name = "master_id")
+    private User master;
 }
