@@ -2,6 +2,8 @@ package com.jpeccia.rpg3d.model.User;
 
 import java.util.Set;
 
+import com.jpeccia.rpg3d.model.Role.Role;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
