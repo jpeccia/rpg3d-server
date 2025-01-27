@@ -40,7 +40,7 @@ public class MapService {
         Map updatedMap = mapRepository.save(map);
         return new MapResponseDTO(
             updatedMap.getId(),
-            updatedMap.getName(),
+            updatedMap.getName()
         );
     }
 
