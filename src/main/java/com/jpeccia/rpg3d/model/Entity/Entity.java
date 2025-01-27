@@ -29,13 +29,13 @@ public class Entity {
     private Scenario scenario; // Referência ao cenário onde o monstro/vilão está
 
     @Column(nullable = false)
-    private double posX; // Posição X no cenário
+    private double positionX; // Posição X no cenário
 
     @Column(nullable = false)
-    private double posY; // Posição Y no cenário
+    private double positionY; // Posição Y no cenário
 
     @Column(nullable = false)
-    private double posZ; // Posição Z no cenário
+    private double positionZ; // Posição Z no cenário
 
     @Column(nullable = false)
     private String modelUrl; // URL ou caminho para o modelo 3D do monstro/vilão
